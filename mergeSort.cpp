@@ -54,13 +54,10 @@ void mergeSort(int arr[] , int s, int e){
 
     mergeSort(arr , s , mid);
     mergeSort(arr , mid+1 , e);
-
     merge(arr , s ,e);
-
 }
 
 int main(){
-
     int arr[5] = {10,76,34,89,45};
     int n = 5;
 
@@ -68,4 +65,5 @@ int main(){
     for(int i =0; i<n; i++){
         cout << arr[i] << " ";
     }
+    return 0;
 }
