@@ -6,11 +6,9 @@ bool checkPalindrome(string &str , int i , int j){
     if( i >= j){
         return true;
     }
-
     if(str[i] != str[j]){
         return false;
     }
-
     return checkPalindrome(str , i+1 , j-1); 
 }
 
